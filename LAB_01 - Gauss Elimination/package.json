@@ -1,0 +1,14 @@
+{
+  "name": "gauss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gauss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "artur bondar",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^7.3.0"
+  }
+}
