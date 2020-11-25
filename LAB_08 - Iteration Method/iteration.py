@@ -7,14 +7,13 @@ def isIterable(f1, f2, x0, y0):
     f2_dx = diff(f2, x)
     f2_dy = diff(f2, y)
 
-    print('f2_dx + f2_dy:', abs(f2_dx.subs({x: x0, y: y0})))
     if (abs(f1_dx.subs({x: x0, y: y0})) + abs(f1_dy.subs({x: x0, y: y0})) >= 1 or
         abs(f2_dx.subs({x: x0, y: y0})) + abs(f2_dy.subs({x: x0, y: y0})) >= 1):
         raise ValueError('Functions not suitable for the method')
 
 
 def iteration(f1, f2, x0, y0, e):
-    ITERATION_LIMIT = 10
+    ITERATION_LIMIT = 100
 
     isIterable(f1, f2, x0, y0)
 
